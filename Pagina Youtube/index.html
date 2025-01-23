@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Recriação da interface do YouTube com HTML e CSS">
+    <meta name="author" content="Pedro Moraes">
+    <title>Tela YouTube</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body class="body">
+
+    <!-- PARTE SUPERIOR DA PÁGINA -->
+    <header class="barra-superior">
+        <div class="superior-esquerdo">
+            <button class="menu-barras">
+                <img src="./Images/Left.png" alt="voltar a página inicial">
+            </button>
+        </div>
+
+        <div class="superior-centro">
+            <form class="barra-pesquisa">
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit" class="botao-pesquisa">
+                    <img src="./Images/lupa.png" alt="pesquisar">
+                </button>
+            </form>            
+        </div>
+
+        <div class="superior-direito">
+            <button class="botao-upload">
+                <img src="./Images/upload.png" alt="upload">
+            </button>
+            <button class="botao-notificacoes">
+                <img src="./Images/notify.png" alt="notificações">
+            </button>
+            <button class="botao-usuario">
+                <img src="./Images/user.png" alt="usuário">
+            </button>
+        </div>        
+    </header>
+
+    <!-- CONTAINER PRINCIPAL (VIDEO E MENU LATERAL) -->
+    <div class="main-container">
+        <!-- PARTE CENTRAL E PLAYER DE REPRODUÇÃO -->
+        <main class="tela-reproducao" id="tela-reproducao">
+            <!-- PLAYER DO VÍDEO -->
+            <section class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/C2lf-mi6yQc?si=SefZOCY_Fs_fYywN" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- TÍTULO DO VÍDEO -->
+            <section class="titulo-video">
+                <h1>Carreira Tech: Como Decidir Entre Front-end, Back-end e Fullstack</h1>
+            </section>
+
+            <!-- BOTÕES ABAIXO DO VÍDEO -->
+            <section class="botoes-video">
+                <button class="botao">
+                    <img src="./Images/Channel Infos.png" alt="informações do canal">
+                </button>
+                <button class="botao">
+                    <img src="./Images/Subscribe Button.png" alt="botão inscreva-se">
+                </button>
+                <button class="botao">
+                    <img src="./Images/Like.png" alt="botão like">
+                </button>
+                <button class="botao">
+                    <img src="./Images/Deslike.png" alt="botão deslike">
+                </button>
+                <button class="botao">
+                    <img src="./Images/Share.png" alt="botão compartilhar">
+                </button>
+                <button class="botao">
+                    <img src="./Images/Download.png" alt="botão download">
+                </button>
+            </section><br>
+
+            <!-- INFORMAÇÕES E DESCRIÇÃO DO VÍDEO -->
+            <section class="descricao-video">
+                <h3>28.418 visualizações &bull; Transmitido ao vivo em 23 ago. de 2022</h3>
+                <p>
+                    Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a 
+                    temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para 
+                    explorarmos os mistérios do mundo invertido.
+                </p>
+            </section>
+        </main>
+
+        <!-- MENU LATERAL - SUGESTÕES -->
+        <aside class="menu-sugestoes">
+            <nav class="menu-lateral">
+                <div class="lista-videos">
+                    <div class="videos">
+                        <img src="./Images/Thumb1.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>2,1 mil visualizações</p>
+                            <p>Transmitido há 2 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 2.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Scrum Talks</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>3,1 mil visualizações</p>
+                            <p>Transmitido há 4 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 3.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Machine Learning Avançado - Fast Track</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>4,7 mil visualizações</p>
+                            <p>Transmitido há 9 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 4.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Global Skills #2 - Project Planning</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>3,5 mil visualizações</p>
+                            <p>Transmitido há 14 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 5.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Como aprender a programar Python do ZERO</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>7,2 mil visualizações</p>
+                            <p>Transmitido há 6 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 6.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Geração Tech Unimed - BH - Ciência de Dados</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>1,4 mil visualizações</p>
+                            <p>Transmitido há 3 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 7.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Scrum Talks</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>2,5 mil visualizações</p>
+                            <p>Transmitido há 21 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 8.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Machine Learning Avançado - Fast Track</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>0,9 mil visualizações</p>
+                            <p>Transmitido há 18 dias</p>
+                        </div>
+                    </div>
+
+                    <div class="videos">
+                        <img src="./Images/thumb 9.png" alt="video: Geração Tech Unimed - BH - Ciência de Dados" class="miniatura">
+                        <div class="informacoes-miniaturas">
+                            <h3 class="titulo-miniatura">Global Skills #2 - Project Planning</h3>
+                            <p>DigitalInnovationOne</p>
+                            <p>4,3 mil visualizações</p>
+                            <p>Transmitido há 11 dias</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+    </div>
+    
+</body>
+</html>
